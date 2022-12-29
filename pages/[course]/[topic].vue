@@ -10,41 +10,35 @@
                 <Icon name="ri:arrow-go-back-line" size="20" /> Home
             </NuxtLink>
         </div>
-        <h2>{{ route.params.topic.replaceAll('_', " ") }}</h2>
-
-        <div v-for="item in detail" :key="item.id">
-            <div v-html="item.definition"></div>
-        </div>
+        <h2>{{ topics }}</h2>
+        {{ learn.details }}
     </div>
 
 </template>
 
 <script setup>
+import eie414 from '~/src/eie414.json'
+import gec410 from '~/src/gec410.json'
+import eie418 from '~/src/eie418.json'
+import cen416 from '~/src/cen416.json'
 import 'katex/dist/katex.css';
 import parseMath from 'katex/contrib/auto-render/auto-render.js';
-import data from '~/public/data.json'
-
 const route = useRoute()
 const router = useRouter()
-const detail = ref([
-    {
-        topic: 'Block diagram ',
-        definition: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos, nemo nulla voluptatum nesciunt officiis
-        eum illum, aut nihil at ea consequatur qui $$ \\phi = \\frac{N(a \\times d - b \\times c)}{\\sqrt{(a+b)(c+d)(a+c)(b+d)}} $$ incidunt pariatur, soluta ipsa doloribus voluptas? Esse!`
-    }
-])
-
-console.log(data.destinations);
-
-const p = ref()
-const html = ref()
+const subject = route.params.course
+const topics = route.params.topic.replaceAll('_', " ")
+const learn = ref({})
+// const detail = ref([
+//     {
+//         topic: 'Block diagram ',
+//         definition: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos, nemo nulla voluptatum nesciunt officiis
+//         eum illum, aut nihil at ea consequatur qui $$ \\phi = \\frac{N(a \\times d - b \\times c)}{\\sqrt{(a+b)(c+d)(a+c)(b+d)}} $$ incidunt pariatur, soluta ipsa doloribus voluptas? Esse!`
+//     }
+// ])
+if (subject == cen416.code) {
+    learn.value = cen416.topics.find(topic => topic.topic == topics)
+}
 onMounted(() => {
-    html.value = '<p>This is some <strong>bold</strong> text.</p>'
-    const parser = new DOMParser()
-    const doc = parser.parseFromString(html.value, 'text/html')
-    p.value = doc.querySelector('p')
-    console.log(p.value.innerHTML) // 'This is some <strong>bold</strong> text.'
-
     parseMath(document.body)
 
 })
@@ -54,7 +48,6 @@ onMounted(() => {
 
 <style>
 .katex-display {
-    /* overflow-x: scroll; */
     font-size: initial;
 }
 

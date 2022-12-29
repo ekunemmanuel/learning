@@ -32,7 +32,7 @@ const listOfCourses = ref([
         code: 'eie 412'
     },
     {
-        title: 'Statistic and Probablity',
+        title: 'Design and Installation of Electrical and ICT Services',
         code: 'eie 414'
     },
     {

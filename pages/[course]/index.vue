@@ -13,82 +13,42 @@
         <div v-for="(course, index) in courses" :key="index">
 
             <div v-if="subject == course.code">
-                <h2 class="text-[40px] uppercase">{{ course.code.replace(/(?<=\D)(?=\d)/g, ' ' ) }}</h2>
-                <div v-for="item in course.topics" :key="item.id">
-                    <li>
-                        <LazyNuxtLink :to="`${subject}/${item.topic.replaceAll(' ', '_')}`">{{ item.topic }}</LazyNuxtLink>
-                    </li>
-                </div>
-                
+                <h2 class="text-[40px] uppercase">{{ course.code.replace(/(?<=\D)(?=\d) /g, ' ') }}</h2>
+                        <div v-for="item in course.topics" :key="item.id">
+                            <li>
+                                <LazyNuxtLink :to="`${subject}/${item.topic.replaceAll(' ', '_')}`">{{ item.topic }}
+                                </LazyNuxtLink>
+                            </li>
+                        </div>
+
             </div>
         </div>
+        {{ $route.params.course }}
+
     </div>
 </template>
 
 <script setup>
+import eie414 from '~/src/eie414.json'
+import gec410 from '~/src/gec410.json'
+import eie418 from '~/src/eie418.json'
+import cen416 from '~/src/cen416.json'
 const route = useRoute()
 const router = useRouter()
 const subject = route.params.course
 const courses = ref([
+    cen416,
     {
-        code: 'cen416',
-        topics: [
-            {
-                topic: `INTRODUCTION TO ASSEMBLY LANGUAGE & BASIC CONCEPTS`
-            },
-            {
-                topic: `X86 PROCESSOR ARCHITECTURE`
-            },
-            {
-                topic: `ASSEMBLY LANGUAGE FUNDAMENTALS A`
-            },
-            {
-                topic: `ASSEMBLY LANGUAGE FUNDAMENTALS B`
-            },
-            {
-                topic: `INTRODUCTION TO ASSEMBLY LANGUAGE & BASIC CONCEPTS`
-            },
-        ]
+        code: 'eie418',
+        topics: eie418
     },
     {
-        code: 'eie412',
-        topics: [
-            {
-                topic: `INTRODUCTION TO ASSEMBLY LANGUAGE & BASIC CONCEPTS`
-            },
-            {
-                topic: `X86 PROCESSOR ARCHITECTURE`
-            },
-            {
-                topic: `ASSEMBLY LANGUAGE FUNDAMENTALS A`
-            },
-            {
-                topic: `ASSEMBLY LANGUAGE FUNDAMENTALS B`
-            },
-            {
-                topic: `INTRODUCTION TO ASSEMBLY LANGUAGE & BASIC CONCEPTS`
-            },
-        ]
+        code: 'gec410',
+        topics: gec410
     },
     {
-        code: 'eie517',
-        topics: [
-            {
-                topic: `INTRODUCTION TO ASSEMBLY LANGUAGE & BASIC CONCEPTS`
-            },
-            {
-                topic: `X86 PROCESSOR ARCHITECTURE`
-            },
-            {
-                topic: `ASSEMBLY LANGUAGE FUNDAMENTALS A`
-            },
-            {
-                topic: `ASSEMBLY LANGUAGE FUNDAMENTALS B`
-            },
-            {
-                topic: `INTRODUCTION TO ASSEMBLY LANGUAGE & BASIC CONCEPTS`
-            },
-        ]
+        code: 'eie414',
+        topics: eie414
     },
 ])
 

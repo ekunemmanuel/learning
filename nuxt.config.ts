@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "Learn",
+      title: "CU courses",
       meta: [
         { name: "viewport", content: "width=device-width, initial-scale=1" },
       ],
