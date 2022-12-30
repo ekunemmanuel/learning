@@ -149,7 +149,72 @@ export const eie414 = {
             </div>
         </div>
 
+<h2 class="subtopic">Electrical Safety</h2>
+        <p>Electrical accidents can have serious and potentially fatal consequences, including shock, burn, fire, and
+            explosion.
+            These types of accidents can range from electrocutions (deaths from electric shock) to minor burn injuries.
+            Fires and
+            explosions are among the most dangerous and destructive types of electrical accidents, and they can be
+            caused by a
+            variety of factors, including faulty wiring, overloaded circuits, and short circuits.</p>
 
+        <p>Electrical hazards can pose serious risks to people and property, and it is important to take steps to
+            protect against them. Examples of electrical hazards include</p>
+        <li>Contacts with live parts</li>
+        <li>Fire and explosion from faults</li>
+        <li>Electrical shock</li>
+        <li>Electrical shock drowning</li>
+        <li>Electrical contamination</li>
+        <li>Falls</li>
+        <li>Electrical overloading</li>
+        <li>Electrical arc flash</li>
+        <li>Burns</li>
+        <li>Inproper electrical grounding</li>
+        <p>To prevent electrical accidents and protect against these hazards, it is important to follow proper safety
+            procedures and to use electrical equipment and systems correctly.
+            This includes
+            using protective equipment, such as gloves and safety glasses, and following proper wiring and installation
+            techniques.
+            It is also important to regularly inspect and maintain electrical systems to ensure that they are in good
+            working order.
+            By taking these precautions, it is possible to reduce the risk of electrical accidents and protect against
+            the potential
+            risks of shock, burn, fire, and explosion.</p>
+
+        <div>
+            <p>Electrical work is subject to a number of legal requirements and industry-specific regulations and
+                guidelines that are
+                designed to ensure the safety of workers and others in the vicinity of the work. Some examples of these
+                include:</p>
+
+            <li><span class="highlight">The Health and Safety at Work Act (HSW): </span> This Act is applicable to
+                everyone at work, except those in domestic
+                employment, and it also protects others in the vicinity of the work. The HSW sets out the general duties
+                of employers
+                and employees to ensure the health and safety of workers and others.</li>
+
+            <li><span class="highlight">Personal Protective Equipment (PPE) Regulations: </span> These regulations set
+                out the requirements for the use of personal
+                protective equipment (PPE) in the workplace. PPE includes items such as gloves, safety glasses, and hard
+                hats, which are
+                used to protect workers from potential hazards.</li>
+
+            <li><span class="highlight">Nigerian Electricity Regulatory Commission: </span>This commission is
+                responsible for regulating the electricity industry in
+                Nigeria, including the safety of electrical work.</li>
+
+            <li><span class="highlight">Health and Safety Executive (HSE): </span>In some jurisdictions, such as the UK,
+                the HSE is responsible for enforcing safety
+                legislation and regulations, including those related to electrical work.</li>
+
+            <li><span class="highlight">The Institution of Electrical Engineers (IEE) Wiring Regulations: </span>These
+                regulations, also known as the Requirements for
+                Electrical Installations (BS 7671), are considered the "electrician's bible" and form the basis of
+                electrical design,
+                calculations, and installation methods. They relate primarily to the design, selection, erection,
+                inspection, and
+                testing of electrical installations.</li>
+        </div>
 
         `,
     },

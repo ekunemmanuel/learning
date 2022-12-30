@@ -13,7 +13,7 @@
         <h2 class="text-center text-[30px] mb-[1rem]">{{ topics }}</h2>
         <div class="" v-html="learn.details"></div>
 
- 
+        
     </div>
 
 </template>
@@ -92,7 +92,8 @@ p {
 .subtopic {
     text-align: center;
     font-size: 28px;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .highlight {
@@ -105,7 +106,7 @@ li {
     margin: .25rem 0;
 }
 
-.img{
+.img {
     max-width: 900px;
     margin: auto;
     width: 100%;
