@@ -105,6 +105,12 @@ li {
     margin: .25rem 0;
 }
 
+.img{
+    max-width: 900px;
+    margin: auto;
+    width: 100%;
+}
+
 .accordion {
     margin: 10px auto;
 }
