@@ -9,9 +9,7 @@ export default defineNuxtConfig({
       script: [],
       link: [],
       style: [],
-      noscript: [
-        { children: "Javascript is required" },
-      ],
+      noscript: [{ children: "Javascript is required" }],
     },
   },
   css: ["~/assets/css/main.css"],
@@ -25,5 +23,5 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-
+  plugins: [{ src: "~/plugins/vercel.js", mode: "client" }],
 });
