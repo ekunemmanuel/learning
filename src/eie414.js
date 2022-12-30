@@ -95,6 +95,59 @@ export const eie414 = {
             </div>
         </div>
 
+               <div>
+            <h2 class="subtopic">Safety</h2>
+            <p>Safety is the freedom from conditions that can cause death, injury, occupational illness, damage to or
+                loss of equipment
+                or property, or damage to the environment. It involves managing complexity and ensuring completeness and
+                consistency in
+                order to reduce the risk of accidents or incidents. Safety = Managing complexity without going crazy and
+                ensuring completeness and consistency.</p>
+
+
+            <h2 class="segueing">Safty signs</h2>
+            <p>Safety signs are an important part of any workplace safety program, as they help to inform workers about
+                potential hazards and the steps they should take to protect themselves. There are four main types of
+                safety
+                signs:</p>
+
+            <li><span class="highlight">Warning signs: </span> These signs are used to alert workers to potential
+                hazards
+                and to caution them to take
+                appropriate precautions. Warning signs may include symbols such as a triangle with an exclamation mark
+                or a
+                yellow triangle with a black border.</li>
+
+            <li><span class="highlight">Advisory signs:</span> These signs provide information or guidance to workers
+                about
+                specific actions they should take
+                to protect themselves. Advisory signs may include symbols such as a <span class="highlight">blue</span> circle with a white triangle or
+                a
+                green
+                circle with a white symbol.
+            </li>
+            <li><span class="highlight">Mandatory signs: </span> These signs indicate that a specific action or behavior
+                is
+                required by law or company policy.
+                Mandatory signs may include symbols such as a white circle with a blue border or a red circle with a
+                white
+                symbol.</li>
+            <li><span class="highlight">Prohibition signs: </span> These signs indicate that a specific action or
+                behavior
+                is prohibited and must not be done.
+                Prohibition signs may include symbols such as a red circle with a diagonal line through it or a red
+                circle
+                with
+                a white diagonal line through it.</li>
+
+
+            <p>It is important for workers to be familiar with the meaning of different safety signs and to follow the
+                instructions they provide in order to protect themselves and others from potential hazards.</p>
+
+            <div class=" ">
+                <img class=" max-w-[1200px] mx-auto w-full" src="/allsigns.png" />
+            </div>
+        </div>
 
 
 

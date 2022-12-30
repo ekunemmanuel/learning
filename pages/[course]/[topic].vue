@@ -12,6 +12,8 @@
         </div>
         <h2 class="text-center text-[30px] mb-[1rem]">{{ topics }}</h2>
         <div class="" v-html="learn.details"></div>
+
+ 
     </div>
 
 </template>
@@ -48,9 +50,6 @@ switch (subject) {
         break;
 }
 
-function open() {
-    alert('clicked')
-}
 onMounted(() => {
     parseMath(document.body)
 
@@ -84,10 +83,16 @@ p {
 }
 
 .segueing {
-    margin: 1rem 0;
+    margin: 1rem 0 0;
     font-size: 20px;
     font-weight: 500;
     text-decoration: underline;
+}
+
+.subtopic {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 1rem
 }
 
 .highlight {
@@ -97,6 +102,7 @@ p {
 
 li {
     list-style: square;
+    margin: .25rem 0;
 }
 
 .accordion {
