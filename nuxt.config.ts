@@ -23,5 +23,5 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  plugins: [{ src: "~/plugins/vercel.js", mode: "client" }],
+  plugins: ["~/plugins/vercel.js"],
 });
