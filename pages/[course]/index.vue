@@ -23,33 +23,20 @@
 
             </div>
         </div>
-        {{ $route.params.course }}
-
     </div>
 </template>
 
 <script setup>
-import eie414 from '~/src/eie414.json'
-import gec410 from '~/src/gec410.json'
-import eie418 from '~/src/eie418.json'
-import cen416 from '~/src/cen416.json'
+import { eie414 } from '~/src/eie414'
+import { gec410 } from '~~/src/gec410'
+import { eie418 } from '~~/src/eie418'
+import { cen416 } from '~~/src/cen416'
 const route = useRoute()
 const router = useRouter()
 const subject = route.params.course
 const courses = ref([
-    cen416,
-    {
-        code: 'eie418',
-        topics: eie418
-    },
-    {
-        code: 'gec410',
-        topics: gec410
-    },
-    {
-        code: 'eie414',
-        topics: eie414
-    },
+    cen416, eie414, eie418, gec410
+
 ])
 
 </script>

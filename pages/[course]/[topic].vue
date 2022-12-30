@@ -7,20 +7,20 @@
             </button>
             <NuxtLink to="/"
                 class="px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out flex items-center gap-[.2rem]">
-                <Icon name="ri:arrow-go-back-line" size="20" /> Home
+                <Icon name="ri:home-2-line" size="20" /> Home
             </NuxtLink>
         </div>
-        <h2>{{ topics }}</h2>
-        {{ learn.details }}
+        <h2 class="text-center text-[30px] mb-[1rem]">{{ topics }}</h2>
+        <div class="" v-html="learn.details"></div>
     </div>
 
 </template>
 
 <script setup>
-import eie414 from '~/src/eie414.json'
-import gec410 from '~/src/gec410.json'
-import eie418 from '~/src/eie418.json'
-import cen416 from '~/src/cen416.json'
+import { eie414 } from '~~/src/eie414'
+import { gec410 } from '~~/src/gec410'
+import { eie418 } from '~~/src/eie418'
+import { cen416 } from '~~/src/cen416'
 import 'katex/dist/katex.css';
 import parseMath from 'katex/contrib/auto-render/auto-render.js';
 const route = useRoute()
@@ -28,18 +28,46 @@ const router = useRouter()
 const subject = route.params.course
 const topics = route.params.topic.replaceAll('_', " ")
 const learn = ref({})
-// const detail = ref([
-//     {
-//         topic: 'Block diagram ',
-//         definition: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente eos, nemo nulla voluptatum nesciunt officiis
-//         eum illum, aut nihil at ea consequatur qui $$ \\phi = \\frac{N(a \\times d - b \\times c)}{\\sqrt{(a+b)(c+d)(a+c)(b+d)}} $$ incidunt pariatur, soluta ipsa doloribus voluptas? Esse!`
-//     }
-// ])
-if (subject == cen416.code) {
-    learn.value = cen416.topics.find(topic => topic.topic == topics)
+
+switch (subject) {
+    case cen416.code:
+        learn.value = cen416.topics.find(topic => topic.topic == topics)
+        break;
+    case eie414.code:
+        learn.value = eie414.topics.find(topic => topic.topic == topics)
+        break;
+
+    case gec410.code:
+        learn.value = gec410.topics.find(topic => topic.topic == topics)
+        break;
+
+    case eie418.code:
+        learn.value = eie418.topics.find(topic => topic.topic == topics)
+        break;
+    default:
+        break;
+}
+
+function open() {
+    alert('clicked')
 }
 onMounted(() => {
     parseMath(document.body)
+
+    var headers = document.getElementsByClassName('accordion-header');
+
+    for (var i = 0; i < headers.length; i++) {
+        headers[i].addEventListener('click', function () {
+            this.classList.toggle('active');
+            var content = this.nextElementSibling;
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        });
+    }
+
 
 })
 
@@ -50,6 +78,55 @@ onMounted(() => {
 .katex-display {
     font-size: initial;
 }
+
+p {
+    font-size: 16px;
+}
+
+.segueing {
+    margin: 1rem 0;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.highlight {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+li {
+    list-style: square;
+}
+
+.accordion {
+    margin: 10px auto;
+}
+
+.accordion-header {
+    cursor: pointer;
+    background-color: #eee;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.accordion-header:hover {
+    background-color: #ddd;
+}
+
+.accordion-content {
+    margin-top: 10px;
+    padding: 0 18px;
+    display: none;
+    background-color: #eee;
+}
+
+
 
 @media screen and (max-width: 400px) {
     .katex-display {
