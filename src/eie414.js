@@ -145,7 +145,7 @@ export const eie414 = {
                 instructions they provide in order to protect themselves and others from potential hazards.</p>
 
             <div class=" ">
-                <img class=" max-w-[1200px] mx-auto w-full" src="/allsigns.png" />
+                <img class=" max-w-[900px] mx-auto w-full" src="/allsigns.png" />
             </div>
         </div>
 
