@@ -1,5 +1,5 @@
 <template>
-    <div class="main_container px-[1rem]">
+    <div class="main_container px-[1rem] !mb-[2rem]">
         <div class="my-[2rem] sticky top-0 py-[1rem] bg-white flex gap-[1rem]">
             <button @click="router.back" type="button"
                 class="px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out flex items-center gap-[.2rem]">
@@ -10,20 +10,17 @@
                 <Icon name="ri:home-2-line" size="20" /> Home
             </NuxtLink>
         </div>
-        <h2 class="text-center text-[30px] mb-[1rem]">{{ topics }}</h2>
+        <h2 class="text-center text-[25px] sm:text-[30px] mb-[1rem]">{{ topics }}</h2>
         <div class="" v-html="learn.details"></div>
-
-
-
     </div>
 </template>
 
 <script setup>
-import { eie414 } from "~~/src/eie414";
+// import { eie414 } from "~~/src/eie414";
 import { gec410 } from "~~/src/gec410";
 import { eie418 } from "~~/src/eie418";
 import { cen416 } from "~~/src/cen416";
-import eie from "~/src/eie414.json";
+import eie414 from "~/src/eie414.json";
 import "katex/dist/katex.css";
 import parseMath from "katex/contrib/auto-render/auto-render.js";
 const route = useRoute();
@@ -31,7 +28,6 @@ const router = useRouter();
 const subject = route.params.course;
 const topics = route.params.topic.replaceAll("_", " ");
 const learn = ref({});
-// console.log(eie.topics);
 switch (subject) {
     case cen416.code:
         learn.value = cen416.topics.find((topic) => topic.topic == topics);
@@ -54,7 +50,6 @@ switch (subject) {
 onMounted(() => {
     parseMath(document.body);
 
-    // [R = \frac{r}{A} \sqrt{\frac{P}{A}}]
 
     var headers = document.getElementsByClassName("accordion-header");
 
@@ -81,6 +76,18 @@ p {
     font-size: 16px;
 }
 
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
 .segueing {
     margin: 1rem 0 0;
     font-size: 20px;
@@ -90,7 +97,7 @@ p {
 
 .subtopic {
     text-align: center;
-    font-size: 28px;
+    font-size: 23px;
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
