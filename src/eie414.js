@@ -240,7 +240,7 @@ export const eie414 = {
                         expected height of the tower, the thickness of the pipe walls, the base
                         diameter, and whether the tower will be guyed or self-supported.
                     </p>
-                    <NuxtImg class="img" src="monopole.jpg" alt="" />
+                    <img class="img" src="/monopole.jpg" alt="" />
                 </div>
                 <div>
                     <h1 class="segueing">Guyed towers</h1>
@@ -254,7 +254,7 @@ export const eie414 = {
                         sufficient to withstand the maximum tension that is likely to occur under the
                         worst loading conditions.
                     </p>
-                    <NuxtImg class="img" src="guyedtower.jpg" alt="" />
+                    <img class="img" src="/guyedtower.jpg" alt="" />
                 </div>
                 <div>
                     <h1 class="segueing">Self Supporting Tower</h1>
@@ -270,7 +270,7 @@ export const eie414 = {
                         should be provided at all heights where antennas are to be installed. The tower
                         should also be equipped with a climbing ladder.
                     </p>
-                    <NuxtImg class="img" src="selfsupporting.jpg" alt="" />
+                    <img class="img" src="/selfsupporting.jpg" alt="" />
                 </div>
                 <div>
                     <h1 class="segueing">Roof mount towers</h1>
@@ -294,7 +294,7 @@ export const eie414 = {
                             self-supporting or guyed.
                             Non-penetrating roof mounts are best suited for flat surfaces.</li>
                     </ul>
-                    <NuxtImg class="img" src="roofmount.jpg" alt="" />
+                    <img class="img" src="/roofmount.jpg" alt="" />
                 </div>
             </div>
             <br>
