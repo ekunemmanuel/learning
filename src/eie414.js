@@ -214,12 +214,116 @@ export const eie414 = {
                 calculations, and installation methods. They relate primarily to the design, selection, erection,
                 inspection, and
                 testing of electrical installations.</li>
+
+             
         </div>
 
         `,
     },
     {
       topic: "DESIGN AND INSTALLATION OF TELECOMMUNICATION MASTS AND TOWERS",
+      details: `
+              <div>
+            <div>
+                <h1 class="subtopic">Types of Tower</h1>
+                <div>
+                    <h1 class="segueing">Monopole tower or Post masts</h1>
+                    <p>
+                        Monopole towers are made of tapered steel tubes that fit together to form a
+                        stable pole. They can be self-supported or guyed and may have climbing rungs.
+                        The sections of the tower should be made of heavy duty steel or low-alloy
+                        high-strength steel, and the joints should be designed to have a minimum overlap
+                        of 1.5 times the pole diameter. The pipes should be tapered and made of
+                        galvanized steel, and the tower can be designed with a variety of configurations
+                        and finishes to meet local aesthetic requirements. The depth of the overlap, the
+                        base width, and the number of pipes in the tower are determined based on the
+                        expected height of the tower, the thickness of the pipe walls, the base
+                        diameter, and whether the tower will be guyed or self-supported.
+                    </p>
+                    <NuxtImg class="img" src="monopole.jpg" alt="" />
+                </div>
+                <div>
+                    <h1 class="segueing">Guyed towers</h1>
+                    <p>
+                        Guyed towers are structures that are supported and stabilized by tethered wires.
+                        They may be constructed in various forms, such as lattice, triangular or square,
+                        tapered or straight, or monopole. When installing guyed towers, it is important
+                        to use pre-stretched steel for the guy ropes and to avoid over-tightening the
+                        wires in order to prevent alignment issues, cable rupture, and permanent
+                        wrapping of tower structural parts. The strength of the guy wires must be
+                        sufficient to withstand the maximum tension that is likely to occur under the
+                        worst loading conditions.
+                    </p>
+                    <NuxtImg class="img" src="guyedtower.jpg" alt="" />
+                </div>
+                <div>
+                    <h1 class="segueing">Self Supporting Tower</h1>
+                    <p>
+                        Self-supporting towers are structures that are able to stand on their own
+                        without the need for additional support, such as guy wires. These towers are
+                        typically made in the form of a lattice structure, with a triangular or square
+                        shape. The legs of the tower may be made of tube, angle, lattice, or solid round
+                        materials, and the sections may be made of steel angles or steel tubes. The
+                        tower may also feature steel angle cross bracing and tapered sections, with face
+                        widths that vary according to the tower's height and load capacity. Rest
+                        platforms should be provided at intervals of 20 meters, and work platforms
+                        should be provided at all heights where antennas are to be installed. The tower
+                        should also be equipped with a climbing ladder.
+                    </p>
+                    <NuxtImg class="img" src="selfsupporting.jpg" alt="" />
+                </div>
+                <div>
+                    <h1 class="segueing">Roof mount towers</h1>
+                    <p>
+                        Roof mounts are structures that are installed on top of roofs for the purpose of elevating
+                        signals
+                        above potential
+                        interferences or obstructions. They should be designed and installed according to the following
+                        guidelines:
+                    </p>
+                    <ul>
+                        <li>Structural checks must be performed to ensure the chosen roof can withstand the additional
+                            load
+                            imposed by the structure
+                            and antenna array.</li>
+                        <li>Roof mounts should be certified by a structural engineer before installation.</li>
+                        <li>They should generally be limited to lightweight structures of low height and minimal dead
+                            and
+                            dynamic loads.</li>
+                        <li>They can be installed in either a penetrating or non-penetrating mode, and can be
+                            self-supporting or guyed.
+                            Non-penetrating roof mounts are best suited for flat surfaces.</li>
+                    </ul>
+                    <NuxtImg class="img" src="roofmount.jpg" alt="" />
+                </div>
+            </div>
+            <br>
+            <div>
+                <h1 class="subtopic">Considerations for Siting of Towers and Masts</h1>
+                <ul>
+
+                    <li>The siting of towers and masts should minimize their number, protect public safety, and mitigate
+                        visual impacts on the
+                        community.</li>
+                    <li>Stealth and/or camouflage design is encouraged.</li>
+                    <li>Towers and masts in cities should conform to Commission guidelines and standards regarding radio
+                        frequency.</li>
+                    <li>Towers in residential areas should be sited to mitigate heat, smoke, and noise pollution from
+                        generators.</li>
+                    <li>Telecommunications towers over 25 meters in height are not allowed in districts designated as
+                        residential.</li>
+                    <li>Towers over 25 meters in height should be placed at least 5 meters from the nearest property,
+                        with
+                        permission from the
+                        supervising Commission.</li>
+                    <li>Towers and masts sited in violation of these guidelines may be removed with penalty by the
+                        vising Commission.</li>
+                </ul>
+            </div>
+        </div>
+$$ R = \\frac{r}{4} \\sqrt{\\frac{P}{A}}  $$
+$$ R = \\frac{p}{2\\pi l}[\\ln\\left(\\frac{8l}{d}\\right) - 1] $$
+      `,
     },
     {
       topic: "ELECTRICAL INSTALLATION DESIGN",
