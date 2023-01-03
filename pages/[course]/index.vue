@@ -16,7 +16,7 @@
                 <h2 class="text-[40px] uppercase">{{ course.code.replace(/(?<=\D)(?=\d) /g, ' ') }}</h2>
                         <div v-for="item in course.topics" :key="item.id">
                             <li>
-                                <LazyNuxtLink :to="`${subject}/${item.topic.replaceAll(' ', '_')}`">{{ item.topic }}
+                                <LazyNuxtLink :to="`${subject}/${item.topic.replaceAll(' ', '-')}`">{{ item.topic }}
                                 </LazyNuxtLink>
                             </li>
                         </div>
@@ -33,7 +33,8 @@ import { eie418 } from '~~/src/eie418'
 import { cen416 } from '~~/src/cen416'
 const route = useRoute()
 const router = useRouter()
-const subject = route.params.course
+const subject = route.params.course.replaceAll('-', ' ')
+console.log(subject);
 const courses = ref([
     cen416, eie414, eie418, gec410
 

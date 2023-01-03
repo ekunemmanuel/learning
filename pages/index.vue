@@ -1,16 +1,16 @@
 <template>
     <div class="main_container !mt-[4rem] px-[1rem]">
         <h1 class="text-[4rem] font-bold">Courses</h1>
-        <div class="  gap-[1rem] flex-wrap justify-center grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))]">
+        <div class="gap-[1rem] justify-center grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
             <div v-for="(course, index) in listOfCoursesAssending" :key="index">
                 <nuxt-link :to="course.code.replace(' ', '')">
                     <div
-                        class="rounded-lg relative shadow-lg cursor-pointer bg-[#e0b76b] w-full h-full flex flex-col justify-between gap-1  p-[1rem] hover:translate-y-[-5px] duration-300">
+                        class="rounded-lg relative shadow-lg cursor-pointer min-h-[150px] bg-[#e0b76b] h-full flex flex-col justify-between gap-1 p-[1rem] hover:translate-y-[-5px] duration-300">
 
-                        <h1 class="text-[25px] font-bold">{{ course.title }}</h1>
-                        <span class="text-gray-900  bock text-[20px] font-medium mb-2 uppercase">{{
-                                course.code.replace('_', " ")
-                        }}</span>
+                        <h1 class="text-[22px] font-bold">{{ course.title }}</h1>
+                        <span class="text-gray-900  bock text-[18px] font-medium mb-2 uppercase">{{
+        course.code
+                            }}</span>
                     </div>
                 </nuxt-link>
             </div>
