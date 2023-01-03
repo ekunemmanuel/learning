@@ -403,7 +403,7 @@ export const eie414 = {
                     <h2 class="subtopic">Earth Electrode Resistance</h2>
                     <div>
                         <h2 class="segueing">Plate grounding</h2>
-                        $$ R = \\frac{\\rho}{4} \\sqrt{\\frac{\\pi}{A}} $$
+                        $$ R = \\\frac{\\rho}{4} \\sqrt{\\\frac{\\pi}{A}} $$
                         <p>where ρ = resistivity of soil, considered uniform in Ω m. A = area of each side of the
                             plate
                             in m2
@@ -420,7 +420,7 @@ export const eie414 = {
                             ground in a uniform soil can be expressed by:
 
                         </p>
-                        $$ R = \\frac{p}{2\\pi l}[\\ln\\left(\\frac{8l}{d}\\right) - 1] $$
+                        $$ R = \\\frac{p}{2\\pi l}[\\ln\\left(\\\frac{8l}{d}\\right) - 1] $$
                     </div>
 
                     <div>
@@ -438,15 +438,15 @@ export const eie414 = {
                             <p>Sol</p>
                             $$ 600mm $$
 
-                            $$ R = \\frac{\\rho}{4} \\sqrt{\\frac{\\pi}{A}} $$
+                            $$ R = \\\frac{\\rho}{4} \\sqrt{\\\frac{\\pi}{A}} $$
                             $$ 600mm = 0.6m $$
-                            $$ R = \\frac{10}{4} \\sqrt{\\frac{3.14}{2 \\times 0.6 \\times 0.6}} $$
+                            $$ R = \\\frac{10}{4} \\sqrt{\\\frac{3.14}{2 \\\times 0.6 \\\times 0.6}} $$
                             $$ R = 5.22Ω $$
                             <br>
                             $$ 1200mm $$
-                            $$ R = \\frac{\\rho}{4} \\sqrt{\\frac{\\pi}{A}} $$
+                            $$ R = \\\frac{\\rho}{4} \\sqrt{\\\frac{\\pi}{A}} $$
                             $$ 1200mm = 1.2m $$
-                            $$ R = \\frac{10}{4} \\sqrt{\\frac{3.14}{2 \\times 1.2 \\times 1.2}} $$
+                            $$ R = \\\frac{10}{4} \\sqrt{\\\frac{3.14}{2 \\\times 1.2 \\\times 1.2}} $$
                             $$ R = 2.61Ω $$
 
                         </div>
@@ -456,9 +456,9 @@ export const eie414 = {
                                 10 Ω m
                             </li>
                             <p>Sol</p>
-                            $$ R = \\frac{p}{2\\pi l}[\\ln\\left(\\frac{8l}{d}\\right) - 1] $$
+                            $$ R = \\\frac{p}{2\\pi l}[\\ln\\left(\\\frac{8l}{d}\\right) - 1] $$
                             $$ 19mm = 0.019m $$
-                            $$ R = \\frac{10}{2\\pi \\times 2.44}[\\ln\\left(\\frac{8 \\times 2.44}{0.019}\\right) - 1] $$
+                            $$ R = \\\frac{10}{2\\pi \\\times 2.44}[\\ln\\left(\\\frac{8 \\\times 2.44}{0.019}\\right) - 1] $$
                             $$ R = 3.89Ω $$
                         </div>
                     </div>
@@ -553,6 +553,247 @@ export const eie414 = {
     },
     {
       topic: "ELECTRICAL INSTALLATION DESIGN",
+      details: `        <div>
+
+            <div id="steps-for-a-wiring-diagram">
+                <h1 class="subtopic">Steps for a wiring diagram</h1>
+                <ul>
+                    <li>
+                        <p>Draw a floor plan showing the location of walls, doors, windows, plumbing pipes, and heating
+                            and
+                            cooling
+                            ducts.</p>
+                        <img class="img" src="/floor.png" />
+                    </li>
+
+                    <li>
+                        <div>
+                            <p>Determine the floor area and mark it on the diagram.</p>
+                            <img class="img" src="/length.png" />
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Mark the location of switches, luminaires, and permanent appliances with standard
+                                electrical
+                                symbols.</p>
+                            <img class="img" src="/lighting.png" />
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Draw the cable runs between wiring devices, indicating the type, wire gauge, and
+                                insulation
+                                of the
+                                approved
+                                cables.</p>
+
+                            <img class="img" src="/power.png" />
+
+                        </div>
+                    </li>
+                    <li>
+
+                        <div>
+                            <p>Identify the wattages of luminaires, permanent appliances, and building service
+                                equipment, as
+                                well
+                                as the
+                                size and type
+                                of each electrical box.</p>
+
+                            <img class="img" src="/combined.png" />
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="lighting-design">
+                <h1 class="subtopic">Lighting design</h1>
+                <ul>
+                    <li><span class="segueing">Utilization factor:</span> ratio of total lumens received on the working
+                        plane to total lumens emitted
+                        by the light source.
+                        Value varies based on type of light, light fitting, color of surface, mounting height, and area
+                        to be illuminated. Direct fittings varies between 0.4 and 0.6, Indirect fittings varies between
+                        0.1 to 0.35
+
+                        $$ L_{r} =Lumens \\quad received \\quad on \\quad the \\quad working \\quad
+                        plane$$
+
+                        $$ L_{e} =Lumens \\quad
+                        emitted \\quad by \\quad the \\quad lamp $$
+
+                        $$ Utilization \\quad factor = \\frac{L_{r}}{L_{e}}$$
+
+                    </li>
+                    <li><span class="segueing">Depreciation or maintenance factor:</span> ratio of illumination under
+                        normal working conditions to
+                        illumination when
+                        everything is clean or new. Values of good = 0.79, medium = 0.65, or poor = 0.55 are often used
+                        for convenience
+                        <br>
+                        $$ I_{w} = Illumination \\quad under \\quad normal \\quad working \\quad conditions $$
+                        $$ I_{e} = Illumination \\quad when \\quad everything \\quad is \\quad clean $$
+                        $$ D.F = \\frac{I_{w}}{I_{e}} $$
+                    </li>
+                    <li><span class="segueing">Waste light factor:</span> amount of light wasted due to overlapping of
+                        light waves. Value is between
+                        1.2 and 1.5</li>
+                    <li><span class="segueing">Reflection factor:</span> ratio of luminous flux leaving a surface to
+                        luminous flux incident on it.
+                        Value is always less than 1</li>
+                    <li><span class="segueing">Absorption factor:</span> ratio of net lumens available on the working
+                        plane after absorption to total
+                        lumens emitted by the
+                        lamp. Value varies from 0.5 to 1</li>
+                    <li><span class="segueing">Luminous efficiency or specific output:</span> ratio of number of lumens
+                        emitted to electric power
+                        intake of a source. unit is
+                        lumen/watt (lm/W)
+                    </li>
+                    <li><span class="segueing">Spacing to mounting height ratio (SHR):</span> spacing between luminaires
+                        divided by their height above
+                        the horizontal
+                        reference plane</li>
+                    <li><span class="segueing">Room index:</span> ratio of the room's height to its length and width;
+                        calculated using the formula
+                        $$ \\frac{L \\times W}{H_{m} \\times ({L + W})} $$
+                        Where L is the length of the room, W is its width, and Hm is the mounting height above the work
+                        plane
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="subtopic">LUMEN METHOD STEPS:</h2>
+                <ol>
+                    <li>Find required lux level</li>
+                    <li>
+                        <p>Select luminaire</p>
+                        <img class="img" src="/luminiare.png" />
+                    </li>
+
+                    <li>Determine room index</li>
+                    <li>
+                        <p>Determine Number of Fixtures</p>
+                        $$ N = \\frac{E \\times A}{F \\times UF \\times MF} $$
+                        $$ N = number \\quad of \\quad lamps \\quad required. $$
+                        $$ E = illuminance \\quad level \\quad required \\quad (lux) $$
+                        $$ A = area \\quad at \\quad working \\quad plane \\quad height \\quad (m2) $$
+                        $$ F = average \\quad luminous \\quad flux \\quad from \\quad each \\quad lamp \\quad (lm) $$
+                        $$ UF = utilisation \\quad factor, $$
+                        $$ MF = maintenance \\quad factor, $$
+                    </li>
+
+
+
+                    <li>Determine Minimum spacing between luminaire
+                        $$ Minimum \\quad spacing = SHR \\times H_{m} $$
+
+                        $$ H_{m} = Mounting \\quad height $$
+                        $$ SHR= Space \\quad to \\quad height \\quad ratio $$
+                    </li>
+                    <li>Determine Number of required rows of luminaire along width of the room
+                        $$ Number \\quad of \\quad required \\quad rows = \\frac{width \\quad of \\quad the \\quad
+                        room}{Minimum \\quad spacing} $$
+                    </li>
+
+                    <li>Determine Number of luminaire in each row
+                        $$ Number \\quad of \\quad luminaire \\quad in \\quad each \\quad row =\\frac{Total \\quad
+                        luminaire}{Number
+                        \\quad of \\quad rows} $$
+                    </li>
+
+                    <li>Axial spacing along luminaire
+
+                        $$ Axial \\quad spacing=\\frac{Length \\quad of \\quad the \\quad room}{Number \\quad of \\quad
+                        luminaire \\quad in \\quad each \\quad row} $$
+                    </li>
+                    <li>Transverse spacing between luminaire
+                        $$ Transverse \\quad spacing =\\frac{Width \\quad of \\quad the \\quad room}{Number \\quad of \\quad
+                        luminaire \\quad in \\quad each \\quad row} $$
+
+                    </li>
+                </ol>
+
+
+                <div id="examples">
+                    <h2 class="subtopic">Examples</h2>
+                    <ul>
+                        <li>
+                            <div>
+                                <p>An office 10m X 5m requires an illumination level of 300 lux on the working plane. Is
+                                    is proposed to use 40 watts fluorescent fittings having a rated output of 2440
+                                    lumens each. Design the lighting scheme.</p>
+                                <span>Solution</span>
+                                $$ E = 300 \\quad lux $$
+                                $$ A = 10m \\times 5m $$
+                                $$ F, total \\quad lamp's \\quad output = n \\times 2440 \\quad lumens $$
+                                $$ n = number \\quad of \\quad lamps $$
+
+                                $$ N = \\frac{E \\times A}{F \\times UF \\times MF} $$
+                                $$ n \\times 2440 = \\frac{300 \\times 10 \\times 5}{0.5 \\times 0.8} $$
+                                $$ n = 15.39 $$
+                                $$ So \\quad we \\quad may \\quad use \\quad 15 - 16 \\quad fittings \\quad of \\quad 40W \\quad
+                                fluorescent \\quad lamps $$
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>Consider a private office of 150sq.ft.area. We wish to use a specific lamp tht has
+                                    2440 lumens to achieve 40fc</p>
+                                <span>Solution</span>
+                                $$ E = 40 \\quad foot \\quad candle $$
+                                $$ A = 150sq.ft $$
+                                $$ F, total \\quad lamp's \\quad output = n \\times 2440 \\quad lumens $$
+                                $$ n = number \\quad of \\quad lamps $$
+
+                                $$ N = \\frac{E \\times A}{F \\times UF \\times MF} $$
+                                $$ n \\times 2440 = \\frac{150 \\times 40 }{0.5 \\times 0.8} $$
+                                $$ n = 6.14 $$
+                                $$ So \\quad we \\quad may \\quad use \\quad 6 \\quad fittings \\quad of \\quad 40W \\quad
+                                fluorescent \\quad lamps
+                                $$
+                                $$ $$
+                                $$ We \\quad need, \\quad 6 \\quad nos \\quad \\quad Single \\quad lamp \\quad luminaire $$
+                                $$ 3 \\quad nos \\quad \\quad 2 \\quad lamp \\quad luminaire $$
+                                $$ 2 \\quad nos \\quad \\quad 3 \\quad lamp \\quad luminaire $$
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div>
+                    <h1 class="subtopic">Class work</h1>
+                    <div>
+                        <p>It is proposed to illuminate an electronic workshop of dimensions 9m x 8m x 3m to an
+                            illuminance of 550 lux at the bench
+                            level. The specification calls for luminaires having one 1500 mm 65 W fluorescent natural
+                            tube with an initial output of
+                            3700 lumens. Determine the number of luminaires required for this installation when the UF
+                            and MF are 0.9 and 0.8,
+                            respectively
+                        </p>
+                        <span>Solution</span>
+                        $$ E = 550 \\quad lux $$
+                        $$ A = 9m \\times 8m $$
+                        $$ F, total \\quad lamp's \\quad output = n \\times 3700 \\quad lumens $$
+                        $$ n = number \\quad of \\quad lamps $$
+
+                        $$ N = \\frac{E \\times A}{F \\times UF \\times MF} $$
+                        $$ n \\times 2440 = \\frac{550 \\times 9 \\times 8}{3700 \\times 0.9 \\times 0.8} $$
+                        $$ n = 14.86 $$
+                        $$ \\therefore 15 \\quad luminaires \\quad are \\quad needed \\quad illuminate \\quad the \\quad
+                        workshop \\quad to \\quad level \\quad of \\quad 550 \\quad lux $$
+                    </div>
+                </div>
+            </div>
+
+
+        </div>`,
     },
   ],
-}
+};
