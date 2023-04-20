@@ -1,6 +1,6 @@
 <template>
     <div class="main_container px-[1rem] !mb-[2rem]">
-        <div class="my-[2rem] sticky top-0 py-[1rem] bg-white flex gap-[1rem]">
+        <div class="sticky top-0 py-[1rem] bg-[#cfcfcf] flex gap-[1rem]">
             <button @click="router.back" type="button"
                 class="px-6 py-2.5 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out flex items-center gap-[.2rem]">
                 <Icon name="ri:arrow-go-back-line" size="20" /> Back

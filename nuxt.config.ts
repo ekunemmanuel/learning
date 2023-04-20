@@ -2,10 +2,10 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "CU courses",
-      meta: [
-        { name: "viewport", content: "width=device-width, initial-scale=1" },
-      ],
+      // title: "CU courses",
+      // meta: [
+      //   { name: "viewport", content: "width=device-width, initial-scale=1" },
+      // ],
       script: [],
       link: [],
       style: [],
@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     },
   },
   css: ["~/assets/css/main.css"],
-  modules: ["@nuxtjs/strapi", "@nuxt/image-edge", "nuxt-icon"],
+  modules: ["@nuxtjs/strapi", "@nuxt/image-edge", "nuxt-icon", '@nuxt/content'],
   strapi: {
     url: "http://localhost:1337",
   },
