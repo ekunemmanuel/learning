@@ -59,12 +59,13 @@ main :deep(h3) {
 :deep(.aside-nav a):hover {
   color: rgb(47, 146, 123);
 }
-@media (max-width: 764px) {
-  .aside-nav {
-    display: none;
-  }
-}
 :deep(.router-link-active ~ .router-link-exact-active) {
   color: rgb(47, 146, 123);
+}
+
+@media (max-width: 764px) {
+ :deep(.aside-nav) {
+    display: none;
+  }
 }
 </style>

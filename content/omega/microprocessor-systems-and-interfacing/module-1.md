@@ -55,7 +55,7 @@ The memory section of a computer typically comprises a combination of RAM (Rando
 To illustrate this, consider memory as a library containing both books and instruction manuals. The instruction manuals contain step-by-step instructions for tasks the computer needs to perform, similar to how a manual describes how to perform a specific task. The books represent the data the computer needs to work with, such as inventory records for a supermarket. In the same way that a library stores and retrieves books and manuals, the memory section stores and retrieves instructions and data to enable the computer to perform its tasks efficiently.
 
 <div class="image">
-    <div class="flex gap-x-2">
+    <div class="flex gap-x-2 flex-wrap">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbrkfCceBIXujH8pP2OiOx0VkbS-eC-hQbOA&usqp=CAU"/>
     <img src="https://www.ghil.ac.uk/fileadmin/_processed_/1/6/csm_German-Historical-Institute-London_HR0024_e6c6419f96.jpg"/>
     </div>
@@ -102,7 +102,7 @@ The control bus can be compared to a traffic control system on a highway. Just a
 <style>
     img{
         margin: auto ;
-        max-height:400px
+        max-height:300px
     }
     .image{
         max-width: 700px;
